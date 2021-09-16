@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>앰배서더호텔 main</title>
+   <link href="css/style.css" rel="stylesheet" type="text/css">
+
+
+   <link href="js/slick/slick.css" rel="stylesheet" type="text/css">
+   <link href="js/slick/slick-theme.css" rel="stylesheet" type="text/css">
+   <link href="js/bxslider-4/css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+   
+   <script src="js/jquery.js"></script>
+   <script src="js/jquery-1.7.2.min.js"></script>
+   <script src="js/bxslider-4/js/jquery.bxslider.js"></script>
+   <script src="js/slick/slick.min.js"></script>
+   <script src="js/main.js"></script>
+
+</head>
+
+<body>
+   <div class="wrap">
+      <!-------------------헤드 시작----------------------->
+      <header>
+         <div class="first">
+            <div class="first_1">
+               <ul>
+                  <li><a href="#">로그인</a></li>
+                  <li><a href="#">회원가입</a></li>
+                  <li><a href="#">예약확인</a></li>
+                  <div class="clear"></div>
+               </ul>
+            </div>
+         </div>
+
+         <!---------<div class="second">
+            <div class="second_1">
+              <div class="logo"><img src="img/logo.png" alt="상단로고"></div>---------->
+
+
+         <!---------태그 추가-->
+
+         <div class="second">
+            <nav id="nav1" class="navi">
+               <div class="nav_inner">
+                  <div class="second_1">
+                     <a href="index.html"><div class="logo"><img src="img/logo.png" alt="상단로고"></div></a>
+                     <ul class="depth1">
+                        <li><a href="#">앰배서더그룹</a>
+                           <ul class="list">
+                              <li><a href="#">CEO소개</a></li>
+                              <li><a href="#">그룹연혁</a></li>
+                              <li><a href="#">호텔소개</a></li>
+                              <li><a href="#">사이버감사실</a></li>
+                              <li><a href="#">호텔뉴스</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="facility.html" class="click_link">호텔안내</a>
+                           <ul class="list">
+                              <li><a href="facility.html" class="click_link">시설안내</a></li>
+                              <li><a href="#">객실안내</a></li>
+                              <li><a href="#">호텔전경</a></li>
+                              <li><a href="#">이용안내</a></li>
+                              <li><a href="#">예약조회</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="#">스페셜오퍼</a>
+                           <ul class="list">
+                              <li><a href="#">패키지</a></li>
+                              <li><a href="#">프로모션</a></li>
+                              <li><a href="#">앰배서더샵</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="wedding.html" class="click_link">웨딩&컨벤션</a>
+                           <ul class="list">
+                              <li><a href="wedding.html" class="click_link">웨딩홀</a></li>
+                              <li><a href="#">웨딩포로모션</a></li>
+                              <li><a href="#">웨딩컨설팅</a></li>
+                              <li><a href="#">연회장</a></li>
+                              <li><a href="#">컨벤션문의</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="#">멤버십</a>
+                           <ul class="list">
+                              <li><a href="#">멤버십안내</a></li>
+                              <li><a href="#">멤버십가입</a></li>
+                           </ul>
+                        </li>
+                        <div class="clear"></div>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+         <div class="clear"></div>
+      </header>
+      <!-------------------메인 이미지 시작------------------>
+      <section class="mainimg">
+         <div class="bxslider">
+            <div><img src="img/main1.jpg"></div>
+            <div><img src="img/main2.jpg"></div>
+            <div><img src="img/main3.jpg"></div>
+         </div>
+
+         <!----<div>
+            <ul>
+               <li><img src="img/main1.jpg"></li>
+            </ul>
+            <a href="#">
+               <div class="btn1"><img src="img/button1.png" alt="슬라이드버튼1"></div>
+            </a>
+            <a href="#">
+               <div class="btn2"><img src="img/button2.png" alt="슬라이드버튼2"></div>
+            </a>
+         </div>---->
+         <div class="notice">
+            <p>앰배서더호텔 <span class="no_1">Members Only</span></p>
+            <p>SUPERS REWARDS<br>
+               HONEYMOON</p>
+            <p>사랑하는 사람과 함께하는 특별한<br>
+               혜택이 가득한 여행을 계획해 보세요.</p>
+               <p><a href="#">자세히보기 ></a></p>
+         </div>
+         <div class="search">
+            <div class="se_bar">
+               <div class="title">
+                  <label class=>호텔 또는 도시<br>
+                     <!-- <input type="text" lise="choices" placeholder="호텔을 선택해주세요.">
+                           <datalist id="choices">
+                              <option value="서울">서울</option>
+                              <option value="인천">인천</option>
+                              <option value="부산">부산</option>
+                              <option value="대전">대전</option>
+                           </datalist> -->
+                     <select class="cho" name="choice" id="local_hotel">
+                        <option>호텔을 선택해주세요.</option>
+                        <option>서울</option>
+                        <option>인천</option>
+                        <option>부산</option>
+                        <option>대전</option>
+                     </select>
+                  </label>
+               </div>
+               <div class="lin"></div>
+               <div class="checkin">
+                  <label>체크인</label><br>
+                  <input type="date">
+               </div>
+               <div class="checkout">
+                  <label>체크아웃</label><br>
+                  <input type="date">
+               </div>
+               <div class="lin"></div>
+               <div><label>객실수 <br> <input class="room" type="number" value="1" min="1" max="5"></label></div>
+               <div><label>성인 <br> <input class="adult" type="number" value="1" min="1" max="5"><label></div>
+               <div><label>어린이 <br> <input class="child" type="number" value="1" min="1" max="5"></label></div>
+               <div class="lin"></div>
+               <!-- <input type="hidden" name="people" data-form="poeple" value="{"room":1,"adult":3,"childeren":0}"> -->
+
+               <div>
+                  <input class="procode" type="text" name="txt" id="txt" size="12" maxlength="10" placeholder="프로모션코드">
+               </div>
+               <div class="search_but">
+                  <input class="sub" type="submit" value="검색">
+               </div>
+            </div>
+         </div>
+
+
+
+         <!---<div class="reserve">
+            <div class="re_bar">
+               <div>
+                  <div class="bar1">
+                     <p>호텔 또는 도시</p>
+                  </div>
+                  <div class="bar2">
+                     <p>호텔을 선택해주세요.</p>
+                  </div>
+               </div>
+               <div>
+                  <div class="bar1">
+                     <p>체크인 체크아웃</p>
+                  </div>
+                  <div class="bar2">
+                     <p>2021.07.31 2박 2021.08.02</p>
+                  </div>
+               </div>
+               <div>
+                  <div class="bar1">
+                     <p>객실수 성인 어린이</p>
+                  </div>
+                  <div class="bar2">
+                     <p>1 3 0</p>
+                  </div>
+               </div>
+               <div>
+                  <div class="code">
+                     <p>프로모션코드</p>
+                  </div>
+               </div>
+               <div>
+                  <div class="tool">
+                     <p>검색</p>
+                  </div>
+               </div>
+            </div>
+         </div>--->
+      </section>
+      <!-------------------콘텐츠 시작----------------------->
+      <section class="content1_0">
+        <h1>Special Offers</h1>
+        <div class="inner">
+         <div class="content1">
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers1.png" alt="스페셜오퍼1"></a></div>
+               <h4>WINE BAR PACKAGE</h4>
+               <div class="line"></div>
+               <div>
+                  <h5>와인바 파티를 즐겨보세요.</h5>
+                  <div class="click">
+                     <a href="#">
+                        <p>Go To Offers</p>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers2.png" alt="스페셜오퍼2"></a></div>
+               <h4>DINNER SET PACKAGE</h4>
+               <div class="line"></div>
+               <h5>풍성한 저녁타임 되세요.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers3.png" alt="스페셜오퍼3"></a></div>
+               <h4>WEDDING PARTY</h4>
+               <div class="line"></div>
+               <h5>웨딩 파티를 즐겨보세요.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers4.png" alt="스페셜오퍼4"></a></div>
+               <h4>POOL & COCKTAIL</h4>
+               <div class="line"></div>
+               <h5>칵테일 한잔을 즐겨보세요.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers5.png" alt="스페셜오퍼5"></a></div>
+               <h4>SUMMER PACKAGE</h4>
+               <div class="line"></div>
+               <h5>썸머 스페셜을 선사합니다.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers6.png" alt="스페셜오퍼6"></a></div>
+               <h4>ROOM PACKAGE</h4>
+               <div class="line"></div>
+               <h5>회원전용으로 만나보세요.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers7.png" alt="스페셜오퍼7"></a></div>
+               <h4>BARBECUE TIME</h4>
+               <div class="line"></div>
+               <h5>바베큐 타임을 즐겨보세요.</h5></a>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers8.png" alt="스페셜오퍼8"></a></div>
+               <h4>BREAKFAST 1+1</h4>
+               <div class="line"></div>
+               <h5>풍성한 조식을 제공합니다.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers1.png" alt="스페셜오퍼1"></a></div>
+               <h4>WINE BAR PACKAGE</h4>
+               <div class="line"></div>
+               <div>
+                  <h5>와인바 파티를 즐겨보세요.</h5>
+                  <div class="click">
+                     <a href="#">
+                        <p>Go To Offers</p>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers2.png" alt="스페셜오퍼2"></a></div>
+               <h4>DINNER SET PACKAGE</h4>
+               <div class="line"></div>
+               <h5>풍성한 저녁타임 되세요.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers3.png" alt="스페셜오퍼3"></a></div>
+               <h4>WEDDING PARTY</h4>
+               <div class="line"></div>
+               <h5>웨딩 파티를 즐겨보세요.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers4.png" alt="스페셜오퍼4"></a></div>
+               <h4>POOL & COCKTAIL</h4>
+               <div class="line"></div>
+               <h5>칵테일 한잔을 즐겨보세요.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers5.png" alt="스페셜오퍼5"></a></div>
+               <h4>SUMMER PACKAGE</h4>
+               <div class="line"></div>
+               <h5>썸머 스페셜을 선사합니다.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers6.png" alt="스페셜오퍼6"></a></div>
+               <h4>ROOM PACKAGE</h4>
+               <div class="line"></div>
+               <h5>회원전용으로 만나보세요.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers7.png" alt="스페셜오퍼7"></a></div>
+               <h4>BARBECUE TIME</h4>
+               <div class="line"></div>
+               <h5>바베큐 타임을 즐겨보세요.</h5></a>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers8.png" alt="스페셜오퍼8"></a></div>
+               <h4>BREAKFAST 1+1</h4>
+               <div class="line"></div>
+               <h5>풍성한 조식을 제공합니다.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers1.png" alt="스페셜오퍼1"></a></div>
+               <h4>WINE BAR PACKAGE</h4>
+               <div class="line"></div>
+               <div>
+                  <h5>와인바 파티를 즐겨보세요.</h5>
+                  <div class="click">
+                     <a href="#">
+                        <p>Go To Offers</p>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers2.png" alt="스페셜오퍼2"></a></div>
+               <h4>DINNER SET PACKAGE</h4>
+               <div class="line"></div>
+               <h5>풍성한 저녁타임 되세요.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers3.png" alt="스페셜오퍼3"></a></div>
+               <h4>WEDDING PARTY</h4>
+               <div class="line"></div>
+               <h5>웨딩 파티를 즐겨보세요.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers4.png" alt="스페셜오퍼4"></a></div>
+               <h4>POOL & COCKTAIL</h4>
+               <div class="line"></div>
+               <h5>칵테일 한잔을 즐겨보세요.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers5.png" alt="스페셜오퍼5"></a></div>
+               <h4>SUMMER PACKAGE</h4>
+               <div class="line"></div>
+               <h5>썸머 스페셜을 선사합니다.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers6.png" alt="스페셜오퍼6"></a></div>
+               <h4>ROOM PACKAGE</h4>
+               <div class="line"></div>
+               <h5>회원전용으로 만나보세요.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers7.png" alt="스페셜오퍼7"></a></div>
+               <h4>BARBECUE TIME</h4>
+               <div class="line"></div>
+               <h5>바베큐 타임을 즐겨보세요.</h5></a>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers8.png" alt="스페셜오퍼8"></a></div>
+               <h4>BREAKFAST 1+1</h4>
+               <div class="line"></div>
+               <h5>풍성한 조식을 제공합니다.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers1.png" alt="스페셜오퍼1"></a></div>
+               <h4>WINE BAR PACKAGE</h4>
+               <div class="line"></div>
+               <div>
+                  <h5>와인바 파티를 즐겨보세요.</h5>
+                  <div class="click">
+                     <a href="#">
+                        <p>Go To Offers</p>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers2.png" alt="스페셜오퍼2"></a></div>
+               <h4>DINNER SET PACKAGE</h4>
+               <div class="line"></div>
+               <h5>풍성한 저녁타임 되세요.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers3.png" alt="스페셜오퍼3"></a></div>
+               <h4>WEDDING PARTY</h4>
+               <div class="line"></div>
+               <h5>웨딩 파티를 즐겨보세요.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers4.png" alt="스페셜오퍼4"></a></div>
+               <h4>POOL & COCKTAIL</h4>
+               <div class="line"></div>
+               <h5>칵테일 한잔을 즐겨보세요.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers5.png" alt="스페셜오퍼5"></a></div>
+               <h4>SUMMER PACKAGE</h4>
+               <div class="line"></div>
+               <h5>썸머 스페셜을 선사합니다.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers6.png" alt="스페셜오퍼6"></a></div>
+               <h4>ROOM PACKAGE</h4>
+               <div class="line"></div>
+               <h5>회원전용으로 만나보세요.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers7.png" alt="스페셜오퍼7"></a></div>
+               <h4>BARBECUE TIME</h4>
+               <div class="line"></div>
+               <h5>바베큐 타임을 즐겨보세요.</h5></a>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers8.png" alt="스페셜오퍼8"></a></div>
+               <h4>BREAKFAST 1+1</h4>
+               <div class="line"></div>
+               <h5>풍성한 조식을 제공합니다.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers1.png" alt="스페셜오퍼1"></a></div>
+               <h4>WINE BAR PACKAGE</h4>
+               <div class="line"></div>
+               <div>
+                  <h5>와인바 파티를 즐겨보세요.</h5>
+                  <div class="click">
+                     <a href="#">
+                        <p>Go To Offers</p>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers2.png" alt="스페셜오퍼2"></a></div>
+               <h4>DINNER SET PACKAGE</h4>
+               <div class="line"></div>
+               <h5>풍성한 저녁타임 되세요.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers3.png" alt="스페셜오퍼3"></a></div>
+               <h4>WEDDING PARTY</h4>
+               <div class="line"></div>
+               <h5>웨딩 파티를 즐겨보세요.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers4.png" alt="스페셜오퍼4"></a></div>
+               <h4>POOL & COCKTAIL</h4>
+               <div class="line"></div>
+               <h5>칵테일 한잔을 즐겨보세요.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers5.png" alt="스페셜오퍼5"></a></div>
+               <h4>SUMMER PACKAGE</h4>
+               <div class="line"></div>
+               <h5>썸머 스페셜을 선사합니다.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers6.png" alt="스페셜오퍼6"></a></div>
+               <h4>ROOM PACKAGE</h4>
+               <div class="line"></div>
+               <h5>회원전용으로 만나보세요.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers7.png" alt="스페셜오퍼7"></a></div>
+               <h4>BARBECUE TIME</h4>
+               <div class="line"></div>
+               <h5>바베큐 타임을 즐겨보세요.</h5></a>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+            <div>
+               <div class="con1"><a href="#"><img src="img/offers8.png" alt="스페셜오퍼8"></a></div>
+               <h4>BREAKFAST 1+1</h4>
+               <div class="line"></div>
+               <h5>풍성한 조식을 제공합니다.</h5>
+               <div class="click">
+                  <a href="#">
+                     <p>Go To Offers</p>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <!--
+         <div class="btn3">
+            <a href="#"><span class="circle"></span></a>
+            <a href="#"><span></span></a>
+            <a href="#"><span></span></a>
+            <a href="#"><span></span></a>
+         </div>---->
+      </div>
+      </section>
+      <section class="content2">
+         <div class="inner">
+            <div class="con2_1"><img src="img/news1.png" alt="뉴스">
+               <a href="#">
+                  <p>NEWS<br>
+                     <span class="con2_plus1">+</span>
+                  </p>
+               </a>
+            </div>
+            <div class="con2_2"><img src="img/membership1.png" alt="멤버십">
+               <a href="#">
+                  <p>MEMBERSHIP<br>
+                     <span class="con2_plus2">+</span>
+                  </p>
+               </a>
+            </div>
+         </div>
+      </section>
+      <section class="content3_0">
+         <h1>Event & Promotion</h1>
+         <div class="inner">
+            <div class="content3">
+               <div>
+                  <a href="#"><img src="img/event1.png" alt="이벤트1"></a>
+                  <p>Brunch Special</p>
+                  <h4>브런치 메뉴 30% 특별할인</h4>
+                  <h5>2021-06-30 ~ 2021-07-15</h5>
+               </div>
+               <div>
+                  <a href="#"><img src="img/event2.png" alt="이벤트2"></a>
+                  <p>Wedding Flower</p>
+                  <h4>웨딩 부케 특별 제작</h4>
+                  <h5>2021-09-30 ~ 2021-11-30</h5>
+               </div>
+               <div>
+                  <a href="#"><img src="img/event3.png" alt="이벤트3"></a>
+                  <p>Afternoon Dessert</p>
+                  <h4>달콤한 디저트 세트</h4>
+                  <h5>2021-08-04 ~ 2021-10-13</h5>
+               </div>
+               <div>
+                  <a href="#"><img src="img/event1.png" alt="이벤트1"></a>
+                  <p>Brunch Special</p>
+                  <h4>브런치 메뉴 30% 특별할인</h4>
+                  <h5>2021-06-30 ~ 2021-07-15</h5>
+               </div>
+               <div>
+                  <a href="#"><img src="img/event2.png" alt="이벤트2"></a>
+                  <p>Wedding Flower</p>
+                  <h4>웨딩 부케 특별 제작</h4>
+                  <h5>2021-09-30 ~ 2021-11-30</h5>
+               </div>
+               <div>
+                  <a href="#"><img src="img/event3.png" alt="이벤트3"></a>
+                  <p>Afternoon Dessert</p>
+                  <h4>달콤한 디저트 세트</h4>
+                  <h5>2021-08-04 ~ 2021-10-13</h5>
+               </div>
+               <div>
+                  <a href="#"><img src="img/event1.png" alt="이벤트1"></a>
+                  <p>Brunch Special</p>
+                  <h4>브런치 메뉴 30% 특별할인</h4>
+                  <h5>2021-06-30 ~ 2021-07-15</h5>
+               </div>
+               <div>
+                  <a href="#"><img src="img/event2.png" alt="이벤트2"></a>
+                  <p>Wedding Flower</p>
+                  <h4>웨딩 부케 특별 제작</h4>
+                  <h5>2021-09-30 ~ 2021-11-30</h5>
+               </div>
+               <div>
+                  <a href="#"><img src="img/event3.png" alt="이벤트3"></a>
+                  <p>Afternoon Dessert</p>
+                  <h4>달콤한 디저트 세트</h4>
+                  <h5>2021-08-04 ~ 2021-10-13</h5>
+               </div>
+            </div>
+         </div>
+         <!--hover-->
+         <!--<div class="btn4">
+            <a href="#"><span class="circle"></span></a>
+            <a href="#"><span></span></a>
+            <a href="#"><span></span></a>
+            <a href="#"><span></span></a>
+            <a href="#"><span></span></a>
+         </div>---->
+      </section>
+      <section class="content4_0">
+         <h1>Gallery</h1>
+         <a href="#">
+            <h4>더보기 <span class="plus">+</span></h4>
+         </a>
+         <div class="con4_ga">
+            <div class="content4">
+               <div class="box1">
+                  <div class="box1_1">
+                     <img src="img/gallery1.png" alt="갤러리1">
+                  </div>
+
+                  <div class="box1_2">
+                     <img class="box1_2" src="img/gallery3.png" alt="갤러리3">
+                     <img class="box1_3" src="img/gallery4.png" alt="갤러리4">
+                  </div>
+               </div>
+               <div class="box2">
+                  <div class="box2_1">
+                     <img src="img/gallery2.png" alt="갤러리2">
+                  </div>
+                  <div class="box2_2">
+                     <img src="img/gallery5.png" alt="갤러리5">
+                  </div>
+               </div>
+            </div>
+            <div class="box1_1-up popup-st">
+               <img class="close" src="img/gallery1-1.png" alt="갤러리1">
+            </div>
+            <div class="box2_1-up popup-st">
+               <img class="close" src="img/gallery2-1.png" alt="갤러리2">
+            </div>
+            <div class="box2_2-up popup-st">
+               <img class="close" src="img/gallery5-1.png" alt="갤러리5">
+            </div>
+            <div class="box1_2-up popup-st">
+               <img class="close" src="img/gallery3-1.png" alt="갤러리3">
+            </div>
+            <div class="box1_3-up popup-st">
+               <img class="close" src="img/gallery4-1.png" alt="갤러리4">
+            </div>
+
+
+         </div>
+         <!---<div class="content4">
+            <div class="box1">
+               <div class="box1_1">
+                  <a href="#"><img src="img/gallery1.png" alt="갤러리1"></a>
+               </div>
+               <div class="box1_2">
+                  <a href="#"><img src="img/gallery3.png" alt="갤러리3"></a>
+                  <a href="#"><img src="img/gallery4.png" alt="갤러리4"></a>
+               </div>
+            </div>
+            <div class="box2">
+               <div class="box2_1">
+                  <a href="#"><img src="img/gallery2.png" alt="갤러리2"></a>
+               </div>
+               <div>
+                  <a href="#"><img src="img/gallery5.png" alt="갤러리5"></a>
+               </div>
+            </div>--->
+         </div>
+      </section>
+      <section class="content5_0">
+         <div class="content5">
+            <label class="label">뉴스레터 구독신청</label>
+            <input class="input_1" type="text" name="txt" id="txt" size="30" maxlength="50"
+               placeholder="이메일 주소를 입력해 주세요."></label>
+            <input class="input_2" type="submit" value="신청"></label>
+         </div>
+
+
+         <!----<div class="content5">
+            <div>
+               <p>뉴스레터 구독신청</p>
+            </div>
+            <div>
+               <p>이메일 주소를 입력해 주세요.</p>
+            </div>
+            <div>
+               <p>신청</p>
+            </div>
+         </div>----->
+      </section>
+      <!-------------------푸터 시작----------------------->
+      <footer>
+         <div class="f_1">
+            <div class="f_11">
+               <div class="logo"><a href="index.html"><img src="img/logo-bottom.png" alt="하단로고"></a></div>
+               <div class="write">
+                  <a href="#"><p><span class="write_left">AMBASSADOR HOTELS</span> <span class="write_right">AMBASSADOR
+                        RESORTS</span>
+                  </p></a>
+               </div>
+               <div class="app"><a href="#"><img src="img/apple.png" alt="애플"></a></div>
+               <div class="ag">
+                  <div><span class="ag_left">
+                        <a href="#">
+                           <p>App Store
+                     </span> <span class="ag_right">▶Google Play</span></p></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="f_2">
+            <a href="#">
+               <p>고객센터 ㅣ <span class="foot">개인정보처리방침</span> ㅣ 이용약관 ㅣ 멤버십 약관 ㅣ 채용 ㅣ 사이트맵 <span class="sns"><img
+                        src="img/sns.png" alt="SNS"></span></p>
+            </a>
+            <p>서울 영등포구 여의대로 108 TEL. 02-3395-6000 사업자등록번호 663-86-00955 통신판매신고번호 창원의창00007호 대표 김기섭<br>
+               Copyright (c) 2021 Ambassador Hotel Group. All rights reserved.</p>
+         </div>
+      </footer>
+   </div>
+
+</body>
+
+</html>
