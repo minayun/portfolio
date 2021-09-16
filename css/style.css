@@ -726,7 +726,7 @@ h1, h2, h3, h4, h5,
     border-width: 2px; }
 
 .site-section {
-  padding: 10em 0; }
+  padding: 10em 0 5em 0; }
   @media (max-width: 991.98px) {
     .site-section {
       padding: 4em 0; } }
