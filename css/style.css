@@ -6,9 +6,10 @@
 -------------------------------------------------------------*/
 /* Base */
 body {
+  font-family: 'Pretendard-Regular';
   line-height: 1.7;
   color: gray;
-  font-weight: 300;
+  font-weight: /*300;*/ inherit;
   font-size: 1.1rem; }
 
 ::-moz-selection {
@@ -85,7 +86,7 @@ h1, h2, h3, h4, h5,
 .btn {
   /**추가**/
   color: #52201E;
-  background-color: #fef4f6;
+  background-color: #f3e0e4;
 
   text-transform: uppercase;
   font-size: 12px;
@@ -726,7 +727,7 @@ h1, h2, h3, h4, h5,
     border-width: 2px; }
 
 .site-section {
-  padding: 10em 0 5em 0; }
+  padding: 10em 0; }
   @media (max-width: 991.98px) {
     .site-section {
       padding: 4em 0; } }
@@ -1085,8 +1086,8 @@ h1, h2, h3, h4, h5,
       box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.4); }
 
 .testimonial-wrap blockquote p {
-  font-size: 1.8rem;
-  color: #000; }
+  font-size: 1.3rem;
+  color: /*#000*/ gray; }
   .testimonial-wrap blockquote p.author {
     font-size: 1.2rem;
     font-family: "Oswald", sans-serif; }
@@ -1213,6 +1214,12 @@ h1, h2, h3, h4, h5,
 
 
 /**************태그 추가*****************/
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 
 a{color: inherit;}
 .ab {font-size:23px; font-weight:bold; color:#F2C9D4;}
