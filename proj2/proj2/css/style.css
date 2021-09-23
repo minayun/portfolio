@@ -1,0 +1,122 @@
+/******태그 추가********/
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Somi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_10@1.0/Somi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*공통*/
+*{margin: 0; padding: 0; list-style: none; text-decoration: none; Color:inherit;}
+
+.anchors>ul>li a { color:#f8c06c; font-family: 'GmarketSansMedium';}
+
+/*Page 1*/
+.page1{position:relative;}
+/* .main>img{max-height: 100%;} */
+.logo{position:absolute; top:2%; left:2%;}
+.scroller {color:#362205;}
+
+/*Page 2*/
+.box1 h3 {color:#362205; font-size:36px; text-align: center; font-family: 'GmarketSansBold'; padding-top:150px;}
+.box1 h5 {color:#362205; font-size:16px; text-align: center; font-family: 'Cafe24SsurroundAir'; line-height: 2em; padding-top:30px;}
+.box1 h1 {color:#ac710b; font-size:90px; text-align: center; font-family: 'Somi'; font-weight: inherit; padding-top:30px; padding-bottom:40px;}
+.box1 p {color:#785d37; font-size:16px; text-align: center; font-family: 'Cafe24SsurroundAir'; line-height: 2em; font-weight:bold; padding-bottom:60px;} 
+.box1{width:50%; height: 100%; background-image: url(../img/logo2.png); background-repeat: no-repeat; background-position: -20% 90%;}
+.box1>div {width:230px; height:72px; background-color: #8e6215; border-radius: 50px; margin:0 auto;}
+.box1>div a:hover {color:#e0a744;}
+.box1>div:hover {background-color: #5a3e0c;}
+.box1>div a {text-align: center; color:#fff; padding:22px; font-size:16px; display: block;}
+.box2{width: 50%; height: 100%; overflow: hidden;}
+.box2>img{height: 100%; margin-left: -35%;}
+
+/*Page 3 ~ Page 5*/
+
+.box3, .box7 {padding-right:5%; z-index:99; opacity: 0;}
+.box6 {padding-left:5%; opacity: 0;}
+.box3 img, .box7 img, .box6 img{width: 90%;}
+.box4 h1, .box5 h1, .box8 h1 {color:#d4b58e; font-size:100px; font-family: 'GmarketSansBold'; }
+
+.box4 h3, .box5 h3, .box8 h3 {width: 80%;color:#392602; font-size:32px; font-family: 'GmarketSansMedium'; position:relative; top: -80px; left: 15%; z-index: 3;}
+
+.box4 h4, .box5 h4, .box8 h4 {color:#f1d7b7; margin: -30px 0 1% -25%; font-size: 2rem; font-family: 'GmarketSansMedium'; padding-bottom:35px; font-weight: inherit;}
+.box4 h5, .box5 h5, .box8 h5 {color:#5e4e35/*392602*/; font-size:20px; font-family: 'Cafe24SsurroundAir'; padding-bottom:40px; line-height: 1.5em;}
+.box4 a, .box5 a, .box8 a {color:#fff; font-size:24px; background-color:#d4b58e; width:180px; height:40px; text-align: center; padding-top:10px; margin-top:40px;
+                          font-family: 'GmarketSansMedium'; display: block;}
+.box4 a:hover, .box5 a:hover, .box8 a:hover {background-color: #d5a66b;} 
+.box4 p:hover, .box5 p:hover, .box8 p:hover {color:#ca7204;}
+
+.pg-active .box3, .pg-active .box6, .pg-active .box7{animation: flip-left 5s; animation-iteration-count: 1; animation-fill-mode: forwards;}
+
+
+@keyframes flip-left {
+    0% {transform: rotatey(90deg); opacity: 0; }
+    100%{transform: rotatey(0);opacity: 1;}
+}
+
+
+
+/*page6*/
+
+.Page-06{opacity: 0;}
+.Page-06 > div{width: 100%; height: 100%; text-align: center;}
+.Page-06 > div:hover{opacity: 0.8;}
+.Page-06 > div h3 {font-size:24px; font-family: 'GmarketSansMedium'; position: relative; top: 84%;}
+.Page-06 > div h5 {color:#fff; font-size:17px; font-family: 'GmarketSansMedium'; position: relative; top: 86%;}
+
+.box9{background:linear-gradient(rgba(250,250,250,0) 20%,rgba(74,55,23,1) 100% ), url(../img/menu1.png); }
+.box9 h3 {color:#f1deb6; }
+
+.box10{background:linear-gradient(rgba(250,250,250,0) 20%,rgb(163, 140, 10,1) 100% ), url(../img/menu2.png);}
+.box10 h3 {color:#f7f5cb;}
+
+.box11{background:linear-gradient(rgba(250,250,250,0) 20%,rgb(39, 68, 18,0.9) 100% ), url(../img/menu3.png); }
+.box11 h3 {color:#caeac5; }
+
+.box12{background:linear-gradient(rgba(250,250,250,0) 20%,rgb(184, 148, 220,0.6) 100% ), url(../img/menu4.png);}
+.box12 h3 {color:#56128f; }
+
+.pg-active .Page-06{opacity: 1;}
+.pg-active .box9 {transform-origin: top center; animation-iteration-count: 1; animation-fill-mode: forwards; animation: fade-down 3s;}
+.pg-active .box10 {transform-origin: top center; animation-iteration-count: 1; animation-fill-mode: forwards; animation: fade-down 3.5s}
+.pg-active .box11 {transform-origin: top center; animation-iteration-count: 1; animation-fill-mode: forwards; animation: fade-down 4s}
+.pg-active .box12 {transform-origin: top center; animation-iteration-count: 1; animation-fill-mode: forwards; animation: fade-down 4.5s}
+
+@keyframes fade-down {
+    0%{transform:scaleY(30%); opacity: 0.1;}
+    100{transform:scaleY(100%); opacity: 1;}
+}
+
+/*Page 7*/
+#page-7 .text {flex-flow: column; background-image: url(../img/bottom_background.png); background-repeat: no-repeat; background-size: cover;}
+.search {color:#6c4e06; font-size:60px; font-family: 'GmarketSansMedium'; margin-top:-250px; margin-bottom:40px;}
+.input_1 {height:38px; width:300px; border:none; border-bottom:1px solid #392602; background-color: inherit; padding: 5px 10px; position:relative; top:-35%;color:#392602; font-family: 'GmarketSansMedium'; font-size:24px;}
+.input_1::placeholder {color:#c5b295; font-family: 'GmarketSansMedium'; font-size:24px;}
+
+
+.footer {background-color:rgba(250,241,232,0.4); width:100%; height:188px; position: absolute; bottom: 0;}
+.foot_1 > p {color:#211401; font-size:18px; font-family: 'GmarketSansMedium'; padding-left:70px; padding-top:20px;}
+.foot_1 > a { display: block;}
+.sns {position:absolute; right:5%; display:block;}
+
+
+
+.fex-but{position: fixed; bottom: 25%; right: 20px; z-index: 100;}
+.fex-but>img {width:55px; height:55px;}
